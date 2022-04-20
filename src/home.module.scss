@@ -1,0 +1,32 @@
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	width: 100vw;
+}
+
+.logoContainer {
+	font-size: 1.8rem;
+	color: var(--gray-900);
+
+	margin: 2rem;
+}
+
+.uploaderSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 0 3rem;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.logoContainer {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+}
