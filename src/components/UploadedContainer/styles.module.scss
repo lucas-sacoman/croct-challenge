@@ -1,0 +1,118 @@
+.UploadedContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 28px;
+	padding: 2rem;
+
+	width: 100%;
+
+	.imageCircle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		width: 10rem;
+		height: 10rem;
+		border-radius: 100%;
+		margin-right: 1rem;
+	}
+
+	.xButton {
+		position: relative;
+		right: -16px;
+		top: -84px;
+
+		cursor: pointer;
+	}
+}
+
+.cropContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 10px;
+	width: 20rem;
+
+	span {
+		color: var(--gray-600);
+		font-size: 1.1rem;
+	}
+
+	label {
+		color: var(--gray-600);
+		margin-top: 10px;
+		font-size: 0.9rem;
+	}
+
+	input[type='range'] {
+		height: 2px;
+		cursor: pointer;
+	}
+
+	.buttonContainer {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+
+		button {
+			background: var(--gray-750);
+			border: none;
+			border-radius: 20px;
+
+			font-weight: 500;
+			color: #ffffff;
+
+			width: 7rem;
+
+			margin-top: 1rem;
+			padding: 0.4rem;
+
+			&:hover {
+				filter: brightness(0.9);
+			}
+		}
+	}
+}
+
+.loaderContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	animation: appear 0.8s ease;
+}
+
+.successfulContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	gap: 10px;
+
+	.successfulMessage {
+		color: var(--green-500);
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+
+	.addAnotherImage {
+		color: var(--gray-700);
+		font-size: 1rem;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
